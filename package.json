@@ -1,0 +1,30 @@
+{
+  "name": "site-metrics-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Connect any app to the SEO Dashboard: Site Metrics Protocol v1 schema, helpers and runnable examples.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "node scripts/e2e.ts",
+    "check": "node scripts/check-site-metrics.ts",
+    "sync:protocol": "node scripts/sync-protocol.ts",
+    "example:express": "node examples/express/server.ts",
+    "example:web": "node examples/web-standard/handler.ts"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

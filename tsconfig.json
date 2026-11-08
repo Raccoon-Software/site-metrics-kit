@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["core", "protocol", "examples", "scripts", "tests"],
+  // These two only make sense inside a Convex project (they import its generated code).
+  "exclude": ["examples/convex/siteMetrics.ts", "examples/convex/http.ts"]
+}
