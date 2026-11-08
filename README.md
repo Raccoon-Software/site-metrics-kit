@@ -73,7 +73,7 @@ export const handler = createSiteMetricsHandler({
   "protocol": "site-metrics/v1",
   "site": "example.com",
   "generatedAt": "2026-11-08T04:30:01.000Z",
-  "warnings": ["Optional: say what is missing or partial"],
+  "warnings": ["Optional: known, permanent gaps, e.g. days before tracking started"],
   "metrics": [ /* what the dashboard shows, max 50 */ ],
   "series":  [ /* daily values of count metrics, max 20,000 */ ],
   "lists":   [ /* ranked snapshots, max 10 × 50 rows (optional) */ ],
